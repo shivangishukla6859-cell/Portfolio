@@ -1,64 +1,51 @@
-import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-50">
+      <main className="mx-auto flex min-h-screen max-w-5xl flex-col justify-between px-6 py-12 md:px-10 md:py-16">
+        {/* Hero */}
+        <section className="flex flex-1 flex-col justify-center gap-6">
+          <p className="text-sm font-medium uppercase tracking-[0.25em] text-sky-400">
+            Senior Frontend Engineer
           </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
+          <h1 className="text-4xl font-semibold tracking-tight md:text-5xl">
+            Shivangi Shukla
+          </h1>
+          <p className="max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
+            I build scalable, high‑performance frontend experiences for enterprise
+            SaaS platforms using React, Next.js, and Vue.js.
+          </p>
+          <div className="flex flex-wrap gap-3 pt-2">
+            <a
+              href="mailto:shuklashivangi787@gmail.com"
+              className="inline-flex items-center justify-center rounded-full bg-sky-500 px-5 py-2.5 text-sm font-medium text-slate-950 shadow-lg shadow-sky-500/30 transition hover:bg-sky-400"
+            >
+              Get in touch
+            </a>
+            <a
+              href="https://linkedin.com/in/shivangi-shukla-9a6106115"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center justify-center rounded-full border border-slate-600 px-5 py-2.5 text-sm font-medium text-slate-100 transition hover:border-sky-400 hover:text-sky-300"
+            >
+              LinkedIn
+            </a>
+          </div>
+          <div className="flex flex-wrap gap-4 pt-4 text-xs text-slate-400 md:text-sm">
+            <span>Noida, India</span>
+            <span className="h-1 w-1 rounded-full bg-slate-500 mt-auto mb-auto" />
+            <span>7+ years experience</span>
+            <span className="h-1 w-1 rounded-full bg-slate-500 mt-auto mb-auto" />
+            <span>Available for frontend roles</span>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="border-t border-slate-800 pt-6 text-xs text-slate-500">
+          <p>
+            © {new Date().getFullYear()} Shivangi Shukla. Built with Next.js
+            and Tailwind CSS.
+          </p>
+        </footer>
       </main>
     </div>
   );
