@@ -3,7 +3,7 @@ export default function Home() {
     <div className="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950 text-slate-50">
       <main className="mx-auto flex min-h-screen max-w-5xl flex-col justify-between px-6 py-12 md:px-10 md:py-16">
         {/* Hero */}
-        <section className="flex flex-1 flex-col justify-center gap-6">
+        <section className="flex flex-1 flex-col justify-center gap-4">
           <p className="text-sm font-medium uppercase tracking-[0.25em] text-sky-400">
             Senior Frontend Engineer
           </p>
@@ -11,8 +11,7 @@ export default function Home() {
             Shivangi Shukla
           </h1>
           <p className="max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
-            I build scalable, high‑performance frontend experiences for enterprise
-            SaaS platforms using React, Next.js, and Vue.js.
+            Your product deserves a frontend that's fast, polished, and built to scale — I make that happen without the back-and-forth.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <a
@@ -30,12 +29,15 @@ export default function Home() {
               LinkedIn
             </a>
           </div>
-          <div className="flex flex-wrap gap-4 pt-4 text-xs text-slate-400 md:text-sm">
+          <p className="max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">
+            Testimonials coming soon — references available on request
+          </p>
+          <div className="flex flex-wrap gap-4 text-xs text-slate-400 md:text-sm">
             <span>Noida, India</span>
             <span className="h-1 w-1 rounded-full bg-slate-500 mt-auto mb-auto" />
             <span>7+ years experience</span>
             <span className="h-1 w-1 rounded-full bg-slate-500 mt-auto mb-auto" />
-            <span>Available for frontend roles</span>
+            <span>Open to freelance projects</span>
           </div>
         </section>
 

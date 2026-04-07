@@ -71,28 +71,24 @@ export default function ProjectsPage() {
             Projects
           </p>
           <h1 className="text-3xl font-semibold tracking-tight md:text-4xl">
-            Selected work &amp; case studies
+            What I Build
           </h1>
           <p className="max-w-2xl text-sm leading-relaxed text-slate-300 md:text-base">
-            This page is ready to showcase detailed case studies as you add more
-            side projects and production work. For now, it includes an example
-            based on your MERN e‑commerce platform from the CV.
+            Side projects and client work, with notes on decisions made along the way.
           </p>
         </header>
 
         <section className="grid gap-4 md:grid-cols-2">
-          {projects.map((project) => (
+          {/* {projects.map((project) => (
             <ProjectCard key={project.title} project={project} />
-          ))}
+          ))} */}
 
           <article className="flex flex-col justify-center rounded-2xl border border-dashed border-slate-700 bg-slate-900/30 p-5 text-sm text-slate-300">
             <h2 className="text-sm font-semibold text-slate-100">
-              Future projects will appear here
+              More projects coming soon
             </h2>
             <p className="mt-2 text-xs text-slate-300">
-              As you ship new side projects or open-source contributions, we can
-              add them here with a similar card layout, including links to live
-              demos and GitHub repositories.
+              More projects coming soon — references available on request
             </p>
           </article>
         </section>
